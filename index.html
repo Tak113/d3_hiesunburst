@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sequences sunburst</title>
+    <!-- what is this? google font? seems without this code stil works-->
+<!--     <link rel="stylesheet" type="text/css"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600"> -->
+    <!-- bootstrap -->
+    <link rel="stylesheet" href = "css/bootstrap.min.css">
+    <!-- custom styling -->
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+
+  <body>
+
+    <!-- navigation bar -->
+    <nav class="navbar navbar-default">
+      <div class = "container">
+        <a class="navbar-brand" href="#"><img id="logo" src="img/logo.png"></a>
+      </div>
+    </nav>
+
+    <!-- bootstrap grid setup -->
+    <div class="container">
+      
+      <!-- main -->
+      <div id="main">
+        <!-- sequence -->
+        <div id="sequence"></div>
+        <!-- chart -->
+        <div id="chart">
+          <!-- sentence inside of sunburst -->
+          <div id="explanation" style="visibility: hidden;">
+            <span id="percentage"></span><br/>
+            of visits begin with this sequence of pages
+          </div>
+        </div>
+      </div>
+      
+      <!-- legend -->
+      <div id="sidebar">
+          <input type="checkbox" id="togglelegend"> Legend<br/>
+          <div id="legend" style="visibility: hidden;"></div>
+      </div>
+
+    </div>
+
+    
+    <!-- don't know what this is  -->
+    <!-- <script type="text/javascript">
+      // Hack to make this example display correctly in an iframe on bl.ocks.org
+      d3.select(self.frameElement).style("height", "700px");
+    </script>  -->
+
+    <!-- external js libraries -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+
+</html>
